@@ -1,0 +1,90 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "ASCII Mood Configuration"
+  },
+  {
+    "type": "text",
+    "defaultValue": "Pick a mood and a color theme. Shaking the watch also cycles to the next mood without opening this page."
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Mood"
+      },
+      {
+        "type": "radiogroup",
+        "messageKey": "MOOD",
+        "label": "Face",
+        "defaultValue": "0",
+        "options": [
+          { "label": "Happy (^_^)", "value": "0" },
+          { "label": "Sad (;_;)", "value": "1" },
+          { "label": "Angry (>_<)", "value": "2" },
+          { "label": "Surprised (o_O)", "value": "3" },
+          { "label": "Wink (^_-)", "value": "4" },
+          { "label": "Starstruck (*_*)", "value": "5" },
+          { "label": "Bored (-_-)", "value": "6" },
+          { "label": "Sleepy (u_u)", "value": "7" }
+        ]
+      },
+      {
+        "type": "toggle",
+        "messageKey": "SHAKE",
+        "label": "Shake to change mood",
+        "defaultValue": true,
+        "description": "Flick your wrist to jump to the next mood, confirmed by a short buzz. Turn this off to keep the mood fixed to what you pick above."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Colors"
+      },
+      {
+        "type": "color",
+        "sunlight": false,
+        "messageKey": "BGCOLOR",
+        "defaultValue": "0x000000",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "sunlight": false,
+        "messageKey": "HOURCOLOR",
+        "defaultValue": "0x00AAFF",
+        "label": "Hour Digits"
+      },
+      {
+        "type": "color",
+        "sunlight": false,
+        "messageKey": "COLONCOLOR",
+        "defaultValue": "0xFFFFFF",
+        "label": "Colon"
+      },
+      {
+        "type": "color",
+        "sunlight": false,
+        "messageKey": "MINUTECOLOR",
+        "defaultValue": "0x00FF00",
+        "label": "Minute Digits"
+      },
+      {
+        "type": "color",
+        "sunlight": false,
+        "messageKey": "FACECOLOR",
+        "defaultValue": "0xFFFFFF",
+        "label": "Face"
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]

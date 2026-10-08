@@ -1,0 +1,62 @@
+{
+    "author": "Axel Kark",
+    "dependencies": {
+        "@rebble/clay": "1.0.8"
+    },
+    "keywords": [
+        "pebble-app",
+        "watchface",
+        "ascii",
+        "mood"
+    ],
+    "name": "ascii-mood",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "ASCII Mood",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "BGCOLOR",
+            "HOURCOLOR",
+            "MINUTECOLOR",
+            "COLONCOLOR",
+            "FACECOLOR",
+            "MOOD",
+            "SHAKE"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "characterRegex": "[()_;<>oOu*^-]",
+                    "file": "fonts/Roboto-Medium.ttf",
+                    "name": "FONT_FACE_90",
+                    "targetPlatforms": [
+                        "gabbro"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[()_;<>oOu*^-]",
+                    "file": "fonts/Roboto-Medium.ttf",
+                    "name": "FONT_FACE_72",
+                    "targetPlatforms": [
+                        "emery"
+                    ],
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "emery",
+            "gabbro"
+        ],
+        "uuid": "0d268bdb-f829-427f-80e7-dde4ff42d90b",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
